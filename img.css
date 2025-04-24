@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #f08080;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header .volver {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffe4e1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #d46a6a;
+  transition: background 0.3s;
+}
+
+header .volver:hover {
+  background-color: #ffe4e1;
+  color: #000;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.producto {
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.producto:hover img {
+  transform: scale(1.05);
+}
+
+.producto p {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ffe4e1;
+  margin: 0;
+}
+.pago-info {
+  background-color: #ffe4e1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.iconos-tarjetas {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.iconos-tarjetas img {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.iconos-tarjetas img:hover {
+  transform: scale(1.1);
+}
+.producto {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparente suave */
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black;
+}
+.carrusel {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffe4e1;
+  border-radius: 10px;
+}
+
+.carrusel h2 {
+  color: #f08080;
+  margin-bottom: 15px;
+}
+
+.carrusel-contenedor {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+}
+.carrusel-items {
+  display: flex;
+  width: 400%;
+  animation: deslizar 16s infinite linear;
+  animation-play-state: running;
+}
+
+.carrusel-items img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes deslizar {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}

@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: #f08080;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.logo-container img {
+  height: 60px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffe4e1;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.ubicaciones {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(255, 228, 225, 0.25);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.ubicaciones h1 {
+  margin-bottom: 30px;
+  color: #ffe4e1;
+  text-shadow: 1px 1px 5px black;
+}
+
+.lugar {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 2px solid #ffe4e1;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.lugar:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lugar h2 {
+  color: #fff0f5;
+}
+
+.lugar p {
+  color: #ffffffcc;
+}
+.mapa {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.mapa h2 {
+  margin-bottom: 20px;
+  color: #ffe4e1;
+  text-shadow: 1px 1px 5px black;
+}

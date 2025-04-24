@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Productos - Abi Cosmetic</title>
+  <link rel="stylesheet" href="img.css" />
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="Logo.jpg" alt="Abi cosmetic" />
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="galeria.html">Galería de Productos</a></li>
+        <li><a href="ubicaciones.html">Ubicaciones</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header>
+    <h1>Galería de Productos</h1>
+  </header>
+
+  <main class="galeria">
+    <div class="producto"><img src="producto1.jpg" alt="Producto 1" /><p>Producto 1</p></div>
+    <div class="producto"><img src="producto2.jpg" alt="Producto 2" /><p>Producto 2</p></div>
+    <div class="producto"><img src="producto3.jpg" alt="Producto 3" /><p>Producto 3</p></div>
+    <div class="producto"><img src="producto4.jpg" alt="Producto 4" /><p>Producto 4</p></div>
+    <div class="producto"><img src="producto5.jpg" alt="Producto 5" /><p>Producto 5</p></div>
+    <div class="producto"><img src="producto6.jpg" alt="Producto 6" /><p>Producto 6</p></div>
+    <div class="producto"><img src="producto7.jpg" alt="Producto 7" /><p>Producto 7</p></div>
+    <div class="producto"><img src="producto8.jpg" alt="Producto 8" /><p>Producto 8</p></div>
+  </main>
+<section class="pago-info">
+  <p>En esta página aceptamos tarjetas de crédito y débito.</p>
+  <div class="iconos-tarjetas">
+    <img src="visa.png" alt="Visa" />
+    <img src="mastercard.png" alt="Mastercard" />
+  </div>
+</section>
+<section class="carrusel">
+  <h2>Promociones especiales</h2>
+  <div class="carrusel-contenedor">
+    <div class="carrusel-items" id="carrusel-items">
+      <img src="producto1.jpg" alt="Promoción 1" />
+      <img src="producto2.jpg" alt="Promoción 2" />
+      <img src="producto3.jpg" alt="Promoción 3" />
+      <img src="producto4.jpg" alt="Promoción 4" />
+    </div>
+  </div>
+</section>
+<script>
+  const carrusel = document.getElementById("carrusel-items");
+
+  // Para pantallas táctiles
+  carrusel.addEventListener("touchstart", () => {
+    carrusel.style.animationPlayState = "paused";
+  });
+
+  carrusel.addEventListener("touchend", () => {
+    carrusel.style.animationPlayState = "running";
+  });
+
+  // Para mouse (PC)
+  carrusel.addEventListener("mouseenter", () => {
+    carrusel.style.animationPlayState = "paused";
+  });
+
+  carrusel.addEventListener("mouseleave", () => {
+    carrusel.style.animationPlayState = "running";
+  });
+</script>
+</body>
+</html>
